@@ -25,6 +25,13 @@ struct ContentView: View {
                 Text("Click me!")
             })
             .buttonStyle(AnimationButtonStyle(full: true))
+            
+            Button(action: {
+                print("Clicked")
+            }, label: {
+                Text("Click me!")
+            })
+            .buttonStyle(AnimationButtonStyle())
         }
     }
 }
