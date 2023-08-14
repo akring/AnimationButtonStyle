@@ -43,8 +43,8 @@ struct AnimationButtonStyle: ButtonStyle {
                     .shadow(color: .black.opacity(0.5), radius: 10)
                 RoundedRectangle(cornerRadius: 20.0, style: .continuous)
                     .frame(width: full ? 260 : 60, height: 220)
-                    .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.red, .purple, .blue]),
-                                                    startPoint: .top, endPoint: .bottom))
+                    .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.green, .blue]),
+                                                                        startPoint: .top, endPoint: .bottom))
                     .rotationEffect(.degrees(rotation))
                     .mask {
                         RoundedRectangle(cornerRadius: 20.0, style: .continuous)
