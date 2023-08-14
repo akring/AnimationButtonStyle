@@ -33,14 +33,22 @@ struct AnimationButtonStyle: ButtonStyle {
             .foregroundColor(.white)
             .font(.title)
             .onAppear {
-                withAnimation(.linear(duration: 4).repeatForever(autoreverses: false)) {
+                withAnimation(.linear(duration: 4)) {
                     rotation = 360
                 }
             }
     }
 }
 
-#Preview {
-    ContentView()
+#if DEBUG
+struct AnimationButtonStyle_Previews: PreviewProvider {
+    #if DEBUG
+    struct AnimationButtonStyle_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
+    }
+    #endif
 }
+#endif
 
